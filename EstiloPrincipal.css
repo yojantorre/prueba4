@@ -1,0 +1,226 @@
+*{
+margin:0;
+padding:0;
+font-family:'open sans',sans-serif;
+background: #dac9df;
+}
+
+.contenedor{
+    border:purple;
+    width:100%;
+    max-width: 100px;
+    margin: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+
+    .cabecera{
+        display: flex;
+        justify-content:space-between;
+        position:relative;
+        height:220px;
+    }
+    
+    .cabecera_igm{
+        width: 100px;
+    } 
+
+    .cabecera_h1{
+        position: absolute;
+        top: 30px;
+        left:200px;
+        }
+       
+        .cabecera_frase{
+            color: purple;
+            position: absolute;
+            top:70px;
+            left:200px;
+            }
+
+            .nav{
+                margin: 10px 10px 0 0;
+                position: absolute;
+                background: none;
+                height: auto;
+                width: unset;
+                border: none;
+                top: 5px;
+                left: 700px;
+            }
+            
+            .nav_link_1{
+                background: #51005D;
+                color: white;
+                    padding:5px;
+                    border-radius: 3px;
+                   }
+             
+                   .nav_link_2{
+                        background: #51005D;
+                color: white;
+                    padding:5px;
+                    border-radius: 3px;
+                   }
+
+                   .nav_link_3{
+                        background: #51005D;
+                color: white;
+                    padding:5px;
+                    border-radius: 3px;
+                   }
+                   
+                   .galeria{
+                       width: 100%;
+                       height: 400px;
+                       background: #333;
+                       display: flex;
+                       justify-content: center;
+                       align-items: center;
+                    }
+                   
+                    .galeria_lienzo{
+                        width: 600px;
+                        height: 350px;
+                        overflow: hidden;
+                    } 
+                    
+                    .galeria_contenedor{
+                        display: flex;
+                        width: 700px;
+                        height: 50px;
+                        transition: transform 1s ease-in;
+                        will-change: transform;
+                        }
+                  
+                        .elemento1:checked.galeria_contenedor {
+                            transform: translatex (0px);
+                        }
+                        
+                        .elemento2:checked.galeria_contenedor {
+                            transform: translatex(-600px);
+                        }
+                        .elemento3:checked.galeria_contenedor {
+                            transform: translatex (-1200px);
+                        }
+                        
+                        .controles{
+                            width:100%;
+                            height:30px;
+                        display: flex;
+                        justify-content: center;
+                        position: relative;
+                        top: -26px;
+                         }
+                         
+                         label{
+                           margin: 5px;
+                           width: 20px;
+                           height: 20px;
+                           border-radius: 100px;
+                           background: blueviolet;
+                           display: block;
+                           cursor: pointer;
+                           }
+                        
+                           .tienda{
+                               display:grid;
+                               grid-template: repeat(3, 300px) / repeat(3, 300px);
+                               justify-content: center;
+                               grid-gap:16px;
+                               width:100%;
+                               height: auto;
+                                 }
+                        
+                                 .tienda article{
+                                     display: flex;
+                                     justify-content: center;
+                                     align-content: space-between;
+                                     flex-flow: wrap;
+                                     border: solid;
+                                     border-radius: 15px;
+                                     overflow: hidden; 
+                             }
+                             
+                             .tienda img{
+                                 position: relative;
+                                 top: 5px;
+                                 width: 150px;
+                                 height: 100px;
+                                 border-radius: 15px;
+                             }
+                             
+                             .tienda div{
+                                 width: 100%;
+                                 height: 40px;
+                                 background: #001b45;
+                             }
+                             
+                             .tienda div h3{
+                                 text-align: center;
+                                 color:#FFFFFF;
+                             }
+                             
+                             .tienda p{
+                                 font: 120% sans-serif;
+                                 text-align: justify;
+                                 padding: 15px;
+                             }
+                            
+                             .espacio{
+                                 position:relative;
+                                 height: 20px;
+                              }
+                             
+                              
+                              .piepagina{
+                              display:flex;
+                              justify-content: center;
+                              position: relative;
+                              height: 105px;
+                              background: #51005D;
+                              align-content:center; 
+                              }
+                             
+                              .piepagina footer{
+                                  text-align: center;
+                                  color: black;
+                              }
+                              
+                              @media screen and (max-width:600px){
+                                  .tienda{
+                                   grid-template : repeat(3,300px)/ repeat(1,300px);                           
+                                  }
+                                 }
+                                 
+                                 @media screen and (max-width:600px){
+                                     .cabecera{
+                                         display: flex;
+                                         justify-content: space-between;
+                                         position: relative;
+                                         height: 130px;
+                                     }
+                                     .cabecera figure{
+                                         width: 130px;
+                                         margin: auto;
+                                     }
+                                     .cabecera_igm{
+                                         width: 95px;
+                                         height: 80px;
+                                     }
+                                     .cabecera_h1{
+                                         position: absolute;
+                                         top: 40px;
+                                         left: 100px;
+                                     }
+                                     .cabecera_frase{
+                                          position: absolute;
+                                         top: 70px;
+                                         left: 100px;
+                                     }
+                                     .nav{
+                                         display: none;
+                                     }
+                                 }
+                                  
+                                 
